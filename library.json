@@ -1,8 +1,8 @@
 {
-  "name": "MemoryUsage",
+  "name": "Memory Usage",
   "keywords": "Memory, RAM, SRAM, .bss, .data, usage, free, print",
   "description": "Memory usage library for Arduino",
-  "include": "MemoryUsage",
+  "version": "1.0.0",
   "repository":
   {
     "type": "git",
