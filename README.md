@@ -1,16 +1,18 @@
 # Memory usage library for Arduino
-This library can be used to print memory diagnostics on the serial console, 
-get stack, heap, .data and .bss size at run-time.
+
+## Features
+This library provides:
+* Print memory usage on the serial console 
+* Get stack and heap size
+* Get .data and .bss sections size
 
 ## Installation
 1. Start the Arduino IDE.
-2. Click File | Preferences:
-   Add the following link to Additional Boards Manager URLs:
-   https://github.com/Erriez/ArduinoLibraryMemoryUsage.git
-   and click OK. 
-3. Click Sketch | Include Library | Manage Libraries
-4. Search for "Memory Usage" by Erriez and click Install.
-5. Run the examples. 
+2. Download the latest version from:  
+   https://github.com/Erriez/ArduinoLibraryMemoryUsage/archive/master.zip
+3. Extract to your Arduino libraries directory.
+3. Click Sketch | Include Library | Add .ZIP Library... and select this ZIP.
+5. Run the example. 
 
 ## Examples
 
