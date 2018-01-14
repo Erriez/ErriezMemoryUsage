@@ -1,0 +1,13 @@
+{
+  "name": "MemoryUsage",
+  "keywords": "Memory, RAM, SRAM, .bss, .data, usage, free, print",
+  "description": "Memory usage library for Arduino",
+  "include": "MemoryUsage",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/Erriez/ArduinoLibraryMemoryUsage.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}

@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For Memory Usage Arduino Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getRamSize	        KEYWORD2
+getDataSectionSize	KEYWORD2
+getBssSectionSize	KEYWORD2
+getStackSize	    KEYWORD2
+getHeapSize	        KEYWORD2
+getFreeMemSize	    KEYWORD2
+printMemoryUsage	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
