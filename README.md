@@ -3,7 +3,7 @@ This library can be used to print memory diagnostics on the serial console,
 get stack, heap, .data and .bss size at run-time.
 
 ## Installation
-1. Start the Arduino IDE
+1. Start the Arduino IDE.
 2. Click File | Preferences:
    Add the following link to Additional Boards Manager URLs:
    https://github.com/Erriez/ArduinoLibraryMemoryUsage.git
@@ -26,7 +26,7 @@ void setup()
 }
 ```
 
-#### Output Arduino Uno
+#### Output serial port Arduino Uno
 ```c++
 SRAM size:  2048 Bytes
 .data size: 22 Bytes
