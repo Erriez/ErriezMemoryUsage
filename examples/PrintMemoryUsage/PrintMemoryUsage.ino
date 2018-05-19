@@ -34,6 +34,9 @@ void setup()
 {
   // Initialize serial port
   Serial.begin(115200);
+  while (!Serial) {
+    ;
+  }
 
   // Print memory usage
   printMemoryUsage();
