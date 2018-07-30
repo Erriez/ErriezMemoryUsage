@@ -16,6 +16,10 @@ This library provides:
 
 ## Examples
 
+Examples | Erriez Memory Usage:
+
+* [PrintMemoryUsage](https://github.com/Erriez/ErriezMemoryUsage/blob/master/examples/PrintMemoryUsage/PrintMemoryUsage.ino)
+
 ### Print memory usage on serial port
 ```c++
 void setup()
@@ -69,3 +73,13 @@ unsigned int dataSize = getDataSectionSize();
 ```c++
 unsigned int bssSize = getBssSectionSize();
 ```
+
+
+## Library installation
+
+Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
+
+
+## Other Arduino Libraries and Sketches from Erriez
+
+* [Erriez Libraries and Sketches](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches)
