@@ -1,0 +1,114 @@
+\href{https://travis-ci.org/Erriez/ErriezMemoryUsage}{\tt }
+
+This Arduino library prints memory usage on the Serial port.
+
+
+
+\subsection*{Features}
+
+This library provides\+:
+\begin{DoxyItemize}
+\item Print memory usage on the serial console
+\item Get stack and heap size
+\item Get .data and .bss sections size
+\end{DoxyItemize}
+
+\subsection*{Examples}
+
+Arduino I\+DE $\vert$ Examples $\vert$ Erriez Memory Usage\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/Erriez/ErriezMemoryUsage/blob/master/examples/PrintMemoryUsage/PrintMemoryUsage.ino}{\tt Print\+Memory\+Usage}
+\end{DoxyItemize}
+
+\subsection*{Documentation}
+
+
+\begin{DoxyItemize}
+\item \href{https://erriez.github.io/ErriezMemoryUsage}{\tt Doxygen online H\+T\+ML}
+\item \href{https://github.com/Erriez/ErriezMemoryUsage/raw/gh-pages/latex/ErriezMemoryUsage.pdf}{\tt Doxygen P\+DF}
+\end{DoxyItemize}
+
+\#\#\# Print memory usage on serial port 
+\begin{DoxyCode}
+1 \{c++\}
+2 void setup()
+3 \{
+4   // Initialize serial port
+5   Serial.begin(115200);
+6 
+7   // Print memory usage
+8   printMemoryUsage();
+9 \}
+\end{DoxyCode}
+
+
+\#\#\#\# Output serial port Arduino Uno 
+\begin{DoxyCode}
+1 \{c++\}
+2 SRAM size:  2048 Bytes
+3 .data size: 22 Bytes
+4 .bss size:  170 Bytes
+5 Stack size: 2 Bytes
+6 Heap size:  0 Bytes
+7 Free mem:   1854 Bytes
+\end{DoxyCode}
+
+
+\subsubsection*{Get R\+AM size}
+
+Get total on-\/chip S\+R\+AM size in Bytes\+: 
+\begin{DoxyCode}
+1 \{c++\}
+2 unsigned int ramSize = getRamSize();
+\end{DoxyCode}
+
+
+\subsubsection*{Get free memory}
+
+Get free memory size which can be allocated between stack and heap\+: 
+\begin{DoxyCode}
+1 \{c++\}
+2 unsigned int freeMemSize = getFreeMemSize();
+\end{DoxyCode}
+
+
+\#\#\# Get stack size 
+\begin{DoxyCode}
+1 \{c++\}
+2 unsigned int stackSize = getStackSize();
+\end{DoxyCode}
+
+
+\#\#\# Get heap size 
+\begin{DoxyCode}
+1 \{c++\}
+2 unsigned int heapSize = getHeapSize();
+\end{DoxyCode}
+
+
+\#\#\# Get .data section size 
+\begin{DoxyCode}
+1 \{c++\}
+2 unsigned int dataSize = getDataSectionSize();
+\end{DoxyCode}
+
+
+\#\#\# Get .bss section size 
+\begin{DoxyCode}
+1 \{c++\}
+2 unsigned int bssSize = getBssSectionSize();
+\end{DoxyCode}
+
+
+\subsection*{Library installation}
+
+Please refer to the \href{https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki}{\tt Wiki} page.
+
+\subsection*{Other Arduino Libraries and Sketches from Erriez}
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/Erriez/ErriezArduinoLibrariesAndSketches}{\tt Erriez Libraries and Sketches} 
+\end{DoxyItemize}
