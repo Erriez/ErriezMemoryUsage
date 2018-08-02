@@ -1,4 +1,9 @@
 # Memory usage library for Arduino
+[![Build Status](https://travis-ci.org/Erriez/ErriezMemoryUsage.svg?branch=master)](https://travis-ci.org/Erriez/ErriezMemoryUsage)
+
+This Arduino library prints memory usage on the Serial port.
+
+![Memory usage](https://raw.githubusercontent.com/Erriez/ErriezMemoryUsage/master/extras/ErriezMemoryUsage.png)
 
 
 ## Features
