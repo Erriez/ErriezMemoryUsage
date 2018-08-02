@@ -15,6 +15,12 @@ Arduino IDE | Examples | Erriez Memory Usage:
 * [PrintMemoryUsage](https://github.com/Erriez/ErriezMemoryUsage/blob/master/examples/PrintMemoryUsage/PrintMemoryUsage.ino)
 
 
+## Documentation
+
+* [Doxygen online HTML](https://erriez.github.io/ErriezMemoryUsage)
+* [Doxygen PDF](https://github.com/Erriez/ErriezMemoryUsage/raw/gh-pages/latex/ErriezMemoryUsage.pdf)
+
+
 ### Print memory usage on serial port
 ```c++
 void setup()

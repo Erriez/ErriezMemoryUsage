@@ -22,13 +22,16 @@
  * SOFTWARE.
  */
 
-/*
- * Memory usage library for Arduino by Erriez
- * Source: https://github.com/Erriez/ArduinoLibraryMemoryUsage
+/*!
+ * \file PrintMemoryUsage.ino
+ * \brief Memory usage library for Arduino by Erriez
+ * \details
+ *      Source:         https://github.com/Erriez/PrintMemoryUsage
+ *      Documentation:  https://erriez.github.io/PrintMemoryUsage
  */
 
-#include <Arduino.h>
 #include <MemoryUsage.h>
+
 
 void setup()
 {
@@ -37,6 +40,7 @@ void setup()
   while (!Serial) {
     ;
   }
+  Serial.println(F("Memory usage:"));
 
   // Print memory usage
   printMemoryUsage();

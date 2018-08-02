@@ -23,23 +23,28 @@
  */
 
 /*!
- * \file MemoryUsage.h
+ * \file PrintMemoryUsage.ino
  * \brief Memory usage library for Arduino by Erriez
  * \details
- *      Source:         https://github.com/Erriez/ErriezMemoryUsage
- *      Documentation:  https://erriez.github.io/ErriezMemoryUsage
+ *      Source:         https://github.com/Erriez/PrintMemoryUsage
+ *      Documentation:  https://erriez.github.io/PrintMemoryUsage
  */
 
-#ifndef MEMORY_USAGE_H_
-#define MEMORY_USAGE_H_
+#include <MemoryUsage.h>
 
-/* Function prototypes */
-unsigned int getRamSize();
-unsigned int getDataSectionSize();
-unsigned int getBssSectionSize();
-unsigned int getStackSize();
-unsigned int getHeapSize();
-unsigned int getFreeMemSize();
-void printMemoryUsage();
+void setup()
+{
+    // Initialize serial port
+    Serial.begin(115200);
+    while (!Serial) {
+        ;
+    }
 
-#endif /* MEMORY_USAGE_H_ */
+    // Print memory usage
+    printMemoryUsage();
+}
+
+void loop()
+{
+
+}

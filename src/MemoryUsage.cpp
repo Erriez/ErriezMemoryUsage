@@ -22,82 +22,115 @@
  * SOFTWARE.
  */
 
-/*
- * Memory usage library for Arduino by Erriez
- * Source: https://github.com/Erriez/ArduinoLibraryMemoryUsage
+/*!
+ * \file MemoryUsage.cpp
+ * \brief Memory usage library for Arduino by Erriez
+ * \details
+ *      Source:         https://github.com/Erriez/ErriezMemoryUsage
+ *      Documentation:  https://erriez.github.io/ErriezMemoryUsage
  */
 
 #include <Arduino.h>
 #include "MemoryUsage.h"
 
+/*!
+ * \brief Get RAM size in Bytes.
+ * \return RAMEND - RAMSTART + 1.
+ */
 unsigned int getRamSize()
 {
-  return RAMEND - RAMSTART + 1;
+    return RAMEND - RAMSTART + 1;
 }
 
+/*!
+ * \brief Get data section size in Bytes.
+ * \return Data section size.
+ */
 unsigned int getDataSectionSize()
 {
-  extern unsigned int __data_start;
-  extern unsigned int __data_end;
+    extern unsigned int __data_start;
+    extern unsigned int __data_end;
 
-  return (unsigned int)&__data_end - (unsigned int)&__data_start;
+    return (unsigned int)&__data_end - (unsigned int)&__data_start;
 }
 
+/*!
+ * \brief Get BSS section size in Bytes.
+ * \return BSS section size.
+ */
 unsigned int getBssSectionSize()
 {
-  extern unsigned int __bss_start;
-  extern unsigned int __bss_end;
+    extern unsigned int __bss_start;
+    extern unsigned int __bss_end;
 
-  return (unsigned int)&__bss_end - (unsigned int)&__bss_start;
+    return (unsigned int)&__bss_end - (unsigned int)&__bss_start;
 }
 
+/*!
+ * \brief Get stack size in Bytes.
+ * \return Stack size.
+ */
 unsigned int getStackSize()
 {
-  return (unsigned int)RAMEND - (unsigned int)SP;
+    return (unsigned int)RAMEND - (unsigned int)SP;
 }
 
+/*!
+ * \brief Get heap size in Bytes.
+ * \return Heap size.
+ */
 unsigned int getHeapSize()
 {
-  extern unsigned int __heap_start;
-  extern unsigned int *__brkval;
+    extern unsigned int __heap_start;
+    extern unsigned int *__brkval;
 
-  if (__brkval == NULL) {
-    return 0;
-  } else {
-    return (unsigned int)__brkval - (unsigned int)&__heap_start;
-  }
+    if (__brkval == NULL) {
+        return 0;
+    } else {
+        return (unsigned int)__brkval - (unsigned int)&__heap_start;
+    }
 }
 
+/*!
+ * \brief Get free memory size in Bytes.
+ * \return Free memory size.
+ */
 unsigned int getFreeMemSize()
 {
-  return getRamSize() - getStackSize() - getHeapSize() -
-         getBssSectionSize() - getDataSectionSize();
+    return getRamSize() -
+           getStackSize() -
+           getHeapSize() -
+           getBssSectionSize() -
+           getDataSectionSize();
 }
 
+/*!
+ * \brief Print memory usage on serial port.
+ */
 void printMemoryUsage()
 {
-  Serial.print(F("SRAM size:  "));
-  Serial.print(getRamSize());
-  Serial.println(F(" Bytes"));
+    Serial.print(F("SRAM size:  "));
+    Serial.print(getRamSize());
+    Serial.println(F(" Bytes"));
 
-  Serial.print(F(".data size: "));
-  Serial.print(getDataSectionSize());
-  Serial.println(F(" Bytes"));
+    Serial.print(F(".data size: "));
+    Serial.print(getDataSectionSize());
+    Serial.println(F(" Bytes"));
 
-  Serial.print(F(".bss size:  "));
-  Serial.print(getBssSectionSize());
-  Serial.println(F(" Bytes"));
+    Serial.print(F(".bss size:  "));
+    Serial.print(getBssSectionSize());
+    Serial.println(F(" Bytes"));
 
-  Serial.print(F("Stack size: "));
-  Serial.print(getStackSize());
-  Serial.println(F(" Bytes"));
+    Serial.print(F("Stack size: "));
+    Serial.print(getStackSize());
+    Serial.println(F(" Bytes"));
 
-  Serial.print(F("Heap size:  "));
-  Serial.print(getHeapSize());
-  Serial.println(F(" Bytes"));
+    Serial.print(F("Heap size:  "));
+    Serial.print(getHeapSize());
+    Serial.println(F(" Bytes"));
 
-  Serial.print(F("Free mem:   "));
-  Serial.print(getFreeMemSize());
-  Serial.println(F(" Bytes"));
-  Serial.println();
+    Serial.print(F("Free mem:   "));
+    Serial.print(getFreeMemSize());
+    Serial.println(F(" Bytes"));
+    Serial.println();
 }
