@@ -30,7 +30,7 @@
  *      Documentation:  https://erriez.github.io/PrintMemoryUsage
  */
 
-#include <MemoryUsage.h>
+#include <ErriezMemoryUsage.h>
 
 
 void setup()

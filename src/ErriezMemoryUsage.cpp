@@ -23,7 +23,7 @@
  */
 
 /*!
- * \file MemoryUsage.cpp
+ * \file ErriezMemoryUsage.cpp
  * \brief Memory usage library for Arduino by Erriez
  * \details
  *      Source:         https://github.com/Erriez/ErriezMemoryUsage
@@ -31,7 +31,7 @@
  */
 
 #include <Arduino.h>
-#include "MemoryUsage.h"
+#include <ErriezMemoryUsage.h>
 
 /*!
  * \brief Get RAM size in Bytes.

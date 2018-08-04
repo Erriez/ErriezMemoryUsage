@@ -51,9 +51,9 @@ include_directories(${SRC_DIR})
 generate_arduino_library(
         ${PROJECT_NAME}Lib
         SRCS
-            ${SRC_DIR}/MemoryUsage.cpp
+            ${SRC_DIR}/ErriezMemoryUsage.cpp
         HDRS
-            ${SRC_DIR}/MemoryUsage.h
+            ${SRC_DIR}/ErriezMemoryUsage.h
 )
 
 # Configure project

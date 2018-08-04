@@ -23,15 +23,15 @@
  */
 
 /*!
- * \file MemoryUsage.h
+ * \file ErriezMemoryUsage.h
  * \brief Memory usage library for Arduino by Erriez
  * \details
  *      Source:         https://github.com/Erriez/ErriezMemoryUsage
  *      Documentation:  https://erriez.github.io/ErriezMemoryUsage
  */
 
-#ifndef MEMORY_USAGE_H_
-#define MEMORY_USAGE_H_
+#ifndef ERRIEZ_MEMORY_USAGE_H_
+#define ERRIEZ_MEMORY_USAGE_H_
 
 /* Function prototypes */
 unsigned int getRamSize();
@@ -42,4 +42,4 @@ unsigned int getHeapSize();
 unsigned int getFreeMemSize();
 void printMemoryUsage();
 
-#endif /* MEMORY_USAGE_H_ */
+#endif /* ERRIEZ_MEMORY_USAGE_H_ */

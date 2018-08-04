@@ -23,14 +23,14 @@
  */
 
 /*!
- * \file PrintMemoryUsage.ino
+ * \file ErriezPrintMemoryUsage.ino
  * \brief Memory usage library for Arduino by Erriez
  * \details
  *      Source:         https://github.com/Erriez/PrintMemoryUsage
  *      Documentation:  https://erriez.github.io/PrintMemoryUsage
  */
 
-#include <MemoryUsage.h>
+#include <ErriezMemoryUsage.h>
 
 void setup()
 {
