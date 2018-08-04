@@ -23,7 +23,6 @@
  */
 
 /*!
- * \file PrintMemoryUsage.ino
  * \brief Memory usage library for Arduino by Erriez
  * \details
  *      Source:         https://github.com/Erriez/PrintMemoryUsage
