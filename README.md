@@ -1,4 +1,4 @@
-# Memory usage library for Arduino
+# Memory Usage library for Arduino AVR targets
 [![Build Status](https://travis-ci.org/Erriez/ErriezMemoryUsage.svg?branch=master)](https://travis-ci.org/Erriez/ErriezMemoryUsage)
 
 This Arduino library prints memory usage on the Serial port.
@@ -23,7 +23,7 @@ Arduino IDE | Examples | Erriez Memory Usage:
 ## Documentation
 
 * [Doxygen online HTML](https://erriez.github.io/ErriezMemoryUsage)
-* [Doxygen PDF](https://github.com/Erriez/ErriezMemoryUsage/raw/gh-pages/latex/ErriezMemoryUsage.pdf)
+* [Doxygen PDF](https://github.com/Erriez/ErriezMemoryUsage/raw/master/ErriezMemoryUsage.pdf)
 
 
 ### Print memory usage on serial port
