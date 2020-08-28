@@ -17,7 +17,7 @@ This library provides:
 
 Arduino IDE | Examples | Erriez Memory Usage:
 
-* [PrintMemoryUsage](https://github.com/Erriez/ErriezMemoryUsage/blob/master/examples/PrintMemoryUsage/PrintMemoryUsage.ino)
+* [PrintMemoryUsage](https://github.com/Erriez/ErriezMemoryUsage/blob/master/examples/ErriezPrintMemoryUsage/ErriezPrintMemoryUsage.ino)
 
 
 ## Documentation
